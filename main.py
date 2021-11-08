@@ -1,28 +1,49 @@
 import json
-import os
+import os # syntax: os.system("cmd do something")
 
-def array_definition():
-    num = meta_arr[0]['windows_num'] # 0 because it always has just one dict
+# this function creates an array of n arrays
+def array_definition(): # 0 because it always has just one dict
     setup = []
-    for i in range(num):
+    for i in range(windows_number):
         setup.append([])
     return setup
 
-def opener(tabs_setup_array):
-    basic_batch = 'start chrome.exe'
+
+
+# this function is responsible for opening the windows
+def opener(sorted_tabs):
+    basic_batch = 'start chrome.exe --new-window'
     tab_strings = [basic_batch, basic_batch, basic_batch]
-    tab_strings[0]
+    for window_num in range(len(sorted_tabs)):
+        for i in sorted_tabs[window_num]:
+            tab_strings[window_num] += " "
+            tab_strings[window_num] += i
+    for i in range(windows_number):
+        os.system(tab_strings[i])
+    return
 
-    return True # i guess this might later cause bugs but let's leave it here for now
 
-with open('setup.json', 'r') as json_file: #don't delete the 'with' idk why but has to be here
+
+# open the json and unpack the data
+with open('setup.json', 'r') as json_file: # don't delete the 'with' idk why but has to be here
     data = json.load(json_file)
     meta_arr = data['meta'] 
+    global windows_number 
+    windows_number = meta_arr[0]['windows_num']
     windows_arr = data['windows']
     setup_arr = data['setup']
-    
-tabs_setup_array = array_definition() #array of arrays of tabs
 
+
+
+# this is just here, it collects the array_definition 's return
+tabs_setup_array = array_definition() # array of arrays of tabs
+
+
+
+# this sorts the setup array into separate arrays in the tabs array
+
+# this is probably stupid and the whole JSON should be reworked but i need to put
+# beta in production already
 for i in setup_arr:
     match i['window']:
         case 1:
@@ -34,3 +55,7 @@ for i in setup_arr:
         case _:
             print("Error 01: Tab assigned to non-existent window ("+str(i['window'])+"). \nTab '"+str(i['link'])+"' discarded. \nFor mor info contact your administrator.\n\n")
 
+opener(tabs_setup_array)
+
+# print("Tabs setup array: ", tabs_setup_array)
+# print("Just setup array:", setup_arr)
