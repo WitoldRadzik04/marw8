@@ -1,5 +1,6 @@
 import json
 import os # syntax: os.system("cmd do something")
+import pygetwindow as gw
 
 # this function creates an array of n arrays
 def array_definition():
@@ -25,6 +26,7 @@ def opener(sorted_tabs):
 
 
 # open the json and unpack the data
+print(os.listdir())
 with open('setup.json', 'r') as json_file: # don't delete the 'with' idk why but has to be here
     data = json.load(json_file)
     meta_arr = data['meta'] 
@@ -56,6 +58,3 @@ for i in setup_arr:
             print("Error 01: Tab assigned to non-existent window ("+str(i['window'])+"). \nTab '"+str(i['link'])+"' discarded. \nFor mor info contact your administrator.\n\n")
 
 opener(tabs_setup_array)
-
-# print("Tabs setup array: ", tabs_setup_array)
-# print("Just setup array:", setup_arr)
