@@ -1,6 +1,7 @@
 import json
 import os # syntax: os.system("cmd do something")
 import pygetwindow as gw
+import time
 
 # this function creates an array of n arrays
 def array_definition():
@@ -57,7 +58,10 @@ for i in setup_arr:
             print("Error 01: Tab assigned to non-existent window ("+str(i['window'])+"). \nTab '"+str(i['link'])+"' discarded. \nFor mor info contact your administrator.\n\n")
 
 # opener(tabs_setup_array)
+os.system("start chrome.exe --new-window diki.pl")
+time.sleep(2)
 
-kod = gw.getActiveWindow()
-kod.restore()
-kod.resizeTo(1920, 1080)
+diki = gw.getWindowsWithTitle("Słownik angielsko-polski, słownik angielski online - Diki - Google Chrome")[0]
+diki.move(-1500, 0)
+diki.resizeTo(1920, 1200)
+diki.maximize()
