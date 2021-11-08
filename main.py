@@ -26,7 +26,6 @@ def opener(sorted_tabs):
 
 
 # open the json and unpack the data
-print(os.listdir())
 with open('setup.json', 'r') as json_file: # don't delete the 'with' idk why but has to be here
     data = json.load(json_file)
     meta_arr = data['meta'] 
@@ -57,4 +56,8 @@ for i in setup_arr:
         case _:
             print("Error 01: Tab assigned to non-existent window ("+str(i['window'])+"). \nTab '"+str(i['link'])+"' discarded. \nFor mor info contact your administrator.\n\n")
 
-opener(tabs_setup_array)
+# opener(tabs_setup_array)
+
+kod = gw.getActiveWindow()
+kod.restore()
+kod.resizeTo(1920, 1080)
