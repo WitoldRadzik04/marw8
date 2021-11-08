@@ -2,7 +2,7 @@ import json
 import os # syntax: os.system("cmd do something")
 
 # this function creates an array of n arrays
-def array_definition(): # 0 because it always has just one dict
+def array_definition():
     setup = []
     for i in range(windows_number):
         setup.append([])
