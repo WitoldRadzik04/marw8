@@ -1,0 +1,48 @@
+{
+    "meta":[
+        {
+            "os": "ms_win_10",
+            "windows_num": 3
+        }
+    ],
+    "windows":[
+        {
+            "id": 1,
+            "width": 1920,
+            "height": 1080
+        },
+        {
+            "id": 2,
+            "width": 1920,
+            "height": 1080
+        },
+        {
+            "id": 3,
+            "width": 1080,
+            "height": 1920
+        }
+    ],
+    "setup": [
+        {
+            "link": "diki.pl",
+            "window": 1
+        },
+        {
+            "link": "lidl.pl",
+            "window": 2
+        },
+        {
+            "link": "https://kruczek.edu.pl/",
+            "window": 2
+        },
+        {
+            "link": "https://hypixel-skyblock.fandom.com/wiki/Fetchur",
+            "window": 2
+        },
+        {
+            "link": "docs.google.com",
+            "window": 1
+        }
+    
+    ]  
+}
