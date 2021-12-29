@@ -4,6 +4,7 @@ if %1==help goto help
 if %1==start goto starting
 if %1==setup goto setup
 if %1==info goto info
+if %1==update goto update
 
 echo Command not found. For help, type ^"marw8 help^"
 
@@ -26,5 +27,9 @@ goto commonexit
 :info
 type %~dp0\readme.md
 goto commonexit
+
+:update
+cd %~dp0
+git pull
 
 :commonexit

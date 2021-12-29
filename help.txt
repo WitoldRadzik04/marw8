@@ -7,6 +7,10 @@ marw8 help
 
     marw8 setup - open setup menu
 
+    marw8 info - display info about the project
+
+    marw8 update - update the app
+
 Contact tech support: 
     email: alicjaradzik.2004@gmail.com 
     discord: Math Princess
