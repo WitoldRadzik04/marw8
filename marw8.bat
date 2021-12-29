@@ -24,7 +24,8 @@ goto commonexit
 goto commonexit
 
 :info
-
+type %~dp0\readme.md
+goto commonexit
 
 :commonexit
 pause
