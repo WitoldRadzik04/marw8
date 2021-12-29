@@ -1,29 +1,12 @@
 {
-  "meta": [
-    {
-      "os": "ms_win_10",
-      "display_number": 3
-    }
-  ],
+  "meta": [{ "os": "ms_win_10", "display_number": 3 }],
   "displays": [
-    {
-      "id": 1,
-      "x_coord": 0,
-      "y_coord": 0
-    },
-    {
-      "id": 2,
-      "x_coord": 2000,
-      "y_coord": 1000
-    },
-    {
-      "id": 3,
-      "x_coord": 2000,
-      "y_coord": 1000
-    }
+    { "id": 1, "x_coord": 34, "y_coord": 48 },
+    { "id": 2, "x_coord": 1977, "y_coord": 12 },
+    { "id": 3, "x_coord": 2205, "y_coord": 454 }
   ],
   "tabs": [
-    ["lidl.pl", "biedronka.pl", "sklepjakiś.pl"],
+    ["lidl.pl", "biedronka.pl", "sklepjaki\u0139\u203a.pl"],
     ["mobidziennik.pl", "librus.pl", "vulcan.pl"],
     ["netflix.com", "hulu.com", "disney.com"]
   ]
