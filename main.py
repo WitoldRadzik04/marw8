@@ -62,6 +62,6 @@ os.system("start chrome.exe --new-window diki.pl")
 time.sleep(2)
 
 diki = gw.getWindowsWithTitle("Słownik angielsko-polski, słownik angielski online - Diki - Google Chrome")[0]
-diki.move(-1500, 0)
-diki.resizeTo(1920, 1200)
+diki.restore()
+diki.moveTo(0, 0)
 diki.maximize()
