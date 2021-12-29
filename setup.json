@@ -1,12 +1,12 @@
 {
   "meta": [{ "os": "ms_win_10", "display_number": 3 }],
   "displays": [
-    { "id": 1, "x_coord": 34, "y_coord": 48 },
-    { "id": 2, "x_coord": 1977, "y_coord": 12 },
-    { "id": 3, "x_coord": 2205, "y_coord": 454 }
+    { "id": 1, "x_coord": 2114, "y_coord": 80 },
+    { "id": 2, "x_coord": 309, "y_coord": 369 },
+    { "id": 3, "x_coord": 2175, "y_coord": 251 }
   ],
   "tabs": [
-    ["lidl.pl", "biedronka.pl", "sklepjaki\u0139\u203a.pl"],
+    ["lidl.pl", "biedronka.pl", "calvinklein.pl/kobiety"],
     ["mobidziennik.pl", "librus.pl", "vulcan.pl"],
     ["netflix.com", "hulu.com", "disney.com"]
   ]

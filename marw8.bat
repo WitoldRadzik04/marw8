@@ -9,7 +9,8 @@ if %1==update goto update
 echo Command not found. For help, type ^"marw8 help^"
 
 :nothing
-echo marw8 requires an argument. To display a list of all commands, type ^"marw8 help^"
+echo Welcome to marw8!
+echo To display a list of all commands, type ^"marw8 help^"
 goto commonexit
 
 :help
@@ -29,7 +30,8 @@ type %~dp0\readme.md
 goto commonexit
 
 :update
-cd %~dp0
-git pull
+echo This is not ready, it might mess up your tabs setup.
+::cd %~dp0
+::git pull
 
 :commonexit
