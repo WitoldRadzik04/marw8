@@ -2,24 +2,24 @@
   "meta": [
     {
       "os": "ms_win_10",
-      "displays_num": 3
+      "display_number": 3
     }
   ],
   "displays": [
     {
       "id": 1,
-      "x_coord": 1920,
-      "y_coord": 1080
+      "x_coord": 0,
+      "y_coord": 0
     },
     {
       "id": 2,
-      "x_coord": 1920,
-      "y_coord": 1080
+      "x_coord": 2000,
+      "y_coord": 1000
     },
     {
       "id": 3,
-      "x_coord": 1080,
-      "y_coord": 1920
+      "x_coord": 2000,
+      "y_coord": 1000
     }
   ],
   "tabs": [
