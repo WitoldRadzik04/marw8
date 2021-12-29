@@ -3,7 +3,7 @@ import os # syntax: os.system("cmd do something")
 import pygetwindow as gw
 import time
 
-with open('setup.json', 'r') as json_file:
+with open(os.path.join(os.path.dirname(__file__), "setup.json"), 'r') as json_file:
     data = json.load(json_file)
     display_number = data["meta"][0]["display_number"]
     displays = data["displays"]

@@ -1,10 +1,3 @@
-# JSON file documentation _(setup.json)_
+# marw8
 
-## meta
-Contains info about the destination computer
-
-## windows
-Contains info about computer's windows
-
-## setup
-Carries tab setup info
+## My mission? Kill discord and cover its body with chrome tabs.

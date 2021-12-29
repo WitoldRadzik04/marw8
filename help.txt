@@ -1,0 +1,13 @@
+
+marw8 help
+
+    marw8 help - display help menu
+
+    marw8 start - execute the program (close discord and open chrome tabs)
+
+    marw8 setup - open setup menu
+
+Contact tech support: 
+    email: alicjaradzik.2004@gmail.com 
+    discord: Math Princess
+
